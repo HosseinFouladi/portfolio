@@ -1,10 +1,10 @@
 <template>
-  <v-btn
-    class="flex rounded-full px-6 py-2"
+  <button
+    class="flex rounded-full px-6 py-2 items-center"
     :style="{ border: `1px solid ${color}`, color, backgroundColor: background }"
   >
     <slot />
-  </v-btn>
+  </button>
 </template>
 
 <script setup lang="ts">

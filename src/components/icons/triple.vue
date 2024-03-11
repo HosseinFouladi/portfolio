@@ -1,5 +1,5 @@
 <template>
-  <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg :width="width" :height="height" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path
       d="M2.74512 20C2.74512 17 5.74512 11 2.74512 2M10.2451 23.5C14.5785 19.3333 23.4451 9.2 24.2451 2M13.2451 30.5C15.9118 30.5 23.0451 29.1 30.2451 23.5"
       stroke="#FEB273"
@@ -10,6 +10,12 @@
   </svg>
 </template>
 
-<script setup></script>
+<script setup>
+  defineProps({
+    width:{type:Number,default:33},
+    height:{type:Number,default:33}
+
+  })
+</script>
 
 <style lang="scss" scoped></style>

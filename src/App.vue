@@ -5,7 +5,7 @@ import Home from './components/home/index.vue';
 </script>
 
 <template >
-  <v-layout class="w-full overflow-hidden"> 
+  <v-layout class="w-full overflow-hidden flex-col"> 
     <Header/>
     <Home/>
   </v-layout>
