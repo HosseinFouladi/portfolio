@@ -3,6 +3,8 @@ import Header from './components/layouts/header.vue';
 import Home from './components/home/index.vue';
 import Services from './components/services/index.vue'
 import Experience from './components/experince/index.vue'
+import About from './components/about/index.vue'
+
 </script>
 
 <template >
@@ -13,6 +15,7 @@ import Experience from './components/experince/index.vue'
     </div>
     <Services class="z-20"/>
     <Experience/>
+    <About/>
   </v-layout>
 </template>
 
