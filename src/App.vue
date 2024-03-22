@@ -4,6 +4,7 @@ import Home from './components/home/index.vue';
 import Services from './components/services/index.vue'
 import Experience from './components/experince/index.vue'
 import About from './components/about/index.vue'
+import Projects from './components/projects/index.vue'
 
 </script>
 
@@ -16,6 +17,7 @@ import About from './components/about/index.vue'
     <Services class="z-20"/>
     <Experience/>
     <About/>
+    <Projects/>
   </v-layout>
 </template>
 

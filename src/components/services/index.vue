@@ -198,7 +198,7 @@ const breakpoints = {
 </script>
 
 <style lang="scss">
-#services {
+#services,#projects {
   & .carousel__pagination-button:hover::after,
   .carousel__pagination-button--active::after {
     background-color: #fd853a !important;
@@ -217,6 +217,12 @@ const breakpoints = {
   & .carousel__pagination {
     margin-top: 50px;
     align-items: center;
+  }
+}
+#projects{
+  & .carousel__pagination-button::after {
+    background-color: #E4E7EC ;
+
   }
 }
 </style>
