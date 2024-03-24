@@ -5,7 +5,7 @@ const links = ref([
   { id: 'about', title: 'About' },
   { id: 'services', title: 'Service' },
   { id: 'resume', title: 'Resume' },
-  { id: 'project', title: 'Project' },
+  { id: 'projects', title: 'Project' },
   { id: 'contact', title: 'Contact' }
 ])
 const scroll=(id:string)=>{

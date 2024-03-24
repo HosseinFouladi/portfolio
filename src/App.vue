@@ -5,6 +5,7 @@ import Services from './components/services/index.vue'
 import Experience from './components/experince/index.vue'
 import About from './components/about/index.vue'
 import Projects from './components/projects/index.vue'
+import Contact from './components/contact/index.vue'
 
 </script>
 
@@ -18,6 +19,7 @@ import Projects from './components/projects/index.vue'
     <Experience/>
     <About/>
     <Projects/>
+    <Contact/>
   </v-layout>
 </template>
 

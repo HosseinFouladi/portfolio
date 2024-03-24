@@ -25,6 +25,12 @@ const router = createRouter({
       name: 'resume',
       component: () => import('../components/experince/index.vue')
     }
+    ,
+    {
+      path: '/projects',
+      name: 'projects',
+      component: () => import('../components/projects/index.vue')
+    }
   ]
 })
 

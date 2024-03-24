@@ -1,5 +1,5 @@
 <template>
-    <section id="projects" class="py-25 px-16 flex flex-col gap-12">
+    <section id="projects" class="py-24 px-16 flex flex-col gap-12">
         <div class="flex justify-between items-center">
             <h1 class="text-[48px] font-bold w-[640px]">Lets have a look at my <span class="text-orange">Portfolio</span></h1>
             <Button>See All</Button>
