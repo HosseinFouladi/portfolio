@@ -6,6 +6,7 @@ import Experience from './components/experince/index.vue'
 import About from './components/about/index.vue'
 import Projects from './components/projects/index.vue'
 import Contact from './components/contact/index.vue'
+import Footer from './components/layouts/footer.vue';
 
 </script>
 
@@ -20,6 +21,7 @@ import Contact from './components/contact/index.vue'
     <About/>
     <Projects/>
     <Contact/>
+    <Footer/>
   </v-layout>
 </template>
 

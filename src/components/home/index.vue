@@ -24,7 +24,7 @@
           class="bg-[#FEB273] w-[600px]  h-[300px] rounded-t-full flex flex-col justify-end relative"
         >
           <img
-            src="/static/images/young-pretty-woman-looking-happy-goofy-with-broad-fun-loony-smile-eyes-wide-open-against-white-wall 3.png"
+            src="/static/images/woman.png"
             alt="me"
             class="absolute w-[600px] z-20 left-1/2 -translate-x-1/2"
           />

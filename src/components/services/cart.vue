@@ -10,7 +10,7 @@
                 <div class="w-[230px] bg-[#757575] h-5 rounded-t-[30px]"></div>
                 <div class="w-[276px] bg-[#9E9D9D] h-5 rounded-t-[30px]"></div>
       
-                <img :src="src" :alt="title"  class="w-full h-[250px] rounded-t-[30px] ">
+                <img :src="src" :alt="title"  class="w-full h-[250px] object-cover rounded-t-[30px] ">
     
             </div>
     

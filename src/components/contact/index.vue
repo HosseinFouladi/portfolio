@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col gap-3 py-24 items-center">
+  <section id="contact" class="flex flex-col gap-3 py-24 items-center">
     <h1 class="text-[48px] w-[600px] text-center font-bold">
       Have an awesome project idea? <span class="text-orange">Lets discuss </span>
     </h1>
@@ -15,7 +15,7 @@
       </div>
     </div>
   </section>
-  <div
+  <!-- <div
     class="bg-[#FB6514] h-[147px] rounded-tl-lg w-[200%] rounded-br-lg flex flex-col justify-center"
   >
     <div class="bg-white h-16 justify-between infinite flex items-center p-2 w-full">
@@ -36,7 +36,7 @@
       <Shape />
       <span class="text-[32px] font-bold">React.js</span>
     </div>
-  </div>
+  </div> -->
 </template>
 
 <script setup lang="ts">

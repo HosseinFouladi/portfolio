@@ -22,18 +22,16 @@
     />
 
     <div class="flex items-center justify-between z-30">
-      <h2 class="text-white text-[48px] font-medium">
-        My <span class="text-orange">Services</span>
-      </h2>
-      <p class="max-w-[456px] text-white">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus nunc, posuere in justo
-        vulputate, bibendum sodales
+      <h2 class="text-white text-[48px] font-medium">My <span class="text-orange">Skills</span></h2>
+      <p class="max-w-[456px] text-white text-xl">
+        With more than 3 years experience, I have achieved below skills and i have become expert in
+        this technologies.
       </p>
     </div>
 
     <carousel :breakpoints="breakpoints" snapAlign="start">
-      <slide v-for="slide in 5" :key="slide">
-        <Cart class="z-30" />
+      <slide v-for="slide in skills" :key="slide.title">
+        <Cart class="z-30" :title="slide.title" :src="slide.src" />
       </slide>
 
       <template #addons>
@@ -48,19 +46,48 @@ import Cart from './cart.vue'
 import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Pagination } from 'vue3-carousel'
 import gsap from 'gsap'
-let tlSmall: gsap.core.Timeline=gsap.timeline()
-let tlMedium: gsap.core.Timeline=gsap.timeline()
-let tlBig: gsap.core.Timeline=gsap.timeline()
+let tlSmall: gsap.core.Timeline = gsap.timeline()
+let tlMedium: gsap.core.Timeline = gsap.timeline()
+let tlBig: gsap.core.Timeline = gsap.timeline()
 
+const skills = [
+  {
+    title: 'React.js',
+    src: '/static/images/react.png'
+  },
+  {
+    title: 'Vue.js',
+    src: '/static/images/vue.webp'
+  },
+  {
+    title: 'Next.js',
+    src: '/static/images/next.png'
+  },
+  {
+    title: 'Nuxt.js',
+    src: '/static/images/nuxt.svg.png'
+  },
+  {
+    title: 'TypeScript',
+    src: '/static/images/typescript.jpg'
+  },
+  {
+    title: 'Git',
+    src: '/static/images/git.png'
+  },
+  {
+    title: 'Docker',
+    src: '/static/images/docker-logo.png'
+  },
+  {
+    title: 'Tailwind',
+    src: '/static/images/tailwind.png'
+  }
+]
 const setAnimations = () => {
-  
-//   tlSmall = gsap.timeline()
-//   tlMedium = gsap.timeline()
-//   tlBig = gsap.timeline()
-
-  tlSmall.clear();
-    tlMedium.clear();
-    tlBig.clear();
+  tlSmall.clear()
+  tlMedium.clear()
+  tlBig.clear()
   //SET ANIMATION TO SMALLEST star
   tlSmall.to('.star-small', {
     x: 300,
@@ -95,7 +122,7 @@ const setAnimations = () => {
     rotate: 5,
     duration: 2
   })
-  tlMedium.to('.star-medium', { y: 50,rotate:-5, duration: 2 })
+  tlMedium.to('.star-medium', { y: 50, rotate: -5, duration: 2 })
 
   //set Animations to biggest star
   tlBig.to('.star-big', {
@@ -117,11 +144,11 @@ const setAnimations = () => {
 }
 
 const resetAnimations = () => {
-    tlSmall.clear();
-    tlMedium.clear();
-    tlBig.clear();
+  tlSmall.clear()
+  tlMedium.clear()
+  tlBig.clear()
 
-    tlSmall.to('.star-small', {
+  tlSmall.to('.star-small', {
     x: 0,
     duration: 2,
     rotate: -90
@@ -154,7 +181,7 @@ const resetAnimations = () => {
     rotate: -5,
     duration: 2
   })
-  tlMedium.to('.star-medium', { y: -50,rotate:5, duration: 2 })
+  tlMedium.to('.star-medium', { y: -50, rotate: 5, duration: 2 })
 
   //set Animations to biggest star
   tlBig.to('.star-big', {
@@ -173,7 +200,6 @@ const resetAnimations = () => {
     duration: 2
   })
   tlBig.to('.star-big', { x: -12, y: 50, duration: 2 })
-
 }
 const breakpoints = {
   // 700px and up
@@ -198,7 +224,8 @@ const breakpoints = {
 </script>
 
 <style lang="scss">
-#services,#projects {
+#services,
+#projects {
   & .carousel__pagination-button:hover::after,
   .carousel__pagination-button--active::after {
     background-color: #fd853a !important;
@@ -219,10 +246,9 @@ const breakpoints = {
     align-items: center;
   }
 }
-#projects{
+#projects {
   & .carousel__pagination-button::after {
-    background-color: #E4E7EC ;
-
+    background-color: #e4e7ec;
   }
 }
 </style>

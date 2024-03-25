@@ -6,7 +6,7 @@
         </div>
         <carousel :breakpoints="breakpoints" snapAlign="start">
             <slide v-for="(slide,index) in projects" :key="index">
-              <Cart :link="slide.link" :id="slide.id"/>
+              <Cart :link="slide.link" :id="slide.id" :description="slide.description"/>
             </slide>
       
             <template #addons>
@@ -47,7 +47,7 @@ const projects=[
     link:'https://g2-holding.com/',
     title:'g2holding',
     background:'',
-    description:'',
+    description:'I have Built g2holding project that present G2 staff and introduce all holding related websites. Slides changes when user scrolls',
     id:1
 },
 {

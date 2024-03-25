@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-[#F2F4F7] py-24 px-16 flex justify-center items-center gap-4">
+  <section id="about" class="bg-[#F2F4F7] py-24 px-16 flex justify-center items-center gap-4">
     <div
       class="relative flex justify-center items-end"
       @mouseenter="isHover = true"
@@ -14,7 +14,7 @@
         />
       </div>
       <img
-        src="/static/images/young-pretty-woman-looking-happy-goofy-with-broad-fun-loony-smile-eyes-wide-open-against-white-wall 3.png"
+        src="/static/images/woman.png"
         class="w-[400px] h-[400px] relative object-cover transition-all duration-500"
         :class="isHover ? ' translate-y-3' : ''"
         alt="me"
@@ -23,17 +23,18 @@
     <div class="flex flex-col gap-12">
       <h1 class="text-[48px] font-bold">Why <span class="text-orange">Hire me</span>?</h1>
       <p class="max-w-[450px] text-gray-thin">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus nunc, posuere in justo
-        vulputate, bibendum sodales
+        I have a deep understanding of frontend technologies such as HTML, CSS, and JavaScript. I keep myself updated with the latest trends and best practices in frontend development.
+        I am adept at troubleshooting and finding innovative solutions to complex frontend challenges. I enjoy tackling problems and am committed to delivering high-quality, robust solutions.
+        I work well in collaborative environments and communicate effectively with team members. I am open to feedback and enjoy learning from others while also sharing my knowledge and expertise.
       </p>
       <div class="flex gap-4 justify-between">
         <div class="flex flex-col gap-3">
-          <span class="text-[24px] font-bold">450+</span>
+          <span class="text-[24px] font-bold">8+</span>
           <span class="text-[18px] text-gray-thin">Project Completed</span>
         </div>
         <div class="flex flex-col gap-3">
-          <span class="text-[24px] font-bold">450+</span>
-          <span class="text-[18px] text-gray-thin">Project Completed</span>
+          <span class="text-[24px] font-bold">3+</span>
+          <span class="text-[18px] text-gray-thin">Years Experience</span>
         </div>
       </div>
       <Button
