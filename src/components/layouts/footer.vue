@@ -1,8 +1,7 @@
 <template>
   <section class="bg-dark py-6 px-16">
-    <div class="flex justify-between w-full border-b-[#475467] border-b pb-12">
+    <div class="flex justify-between w-full items-center border-b-[#475467] border-b pb-12">
       <h1 class="text-white text-[42px]">Lets Connect there</h1>
-      <Button font-size="22px">Hire Me <Arrow /></Button>
     </div>
     <div class="p-12 justify-between flex gap-8 border-b">
       <div class="flex flex-col gap-12">
@@ -14,7 +13,7 @@
           </div>
           <span class="text-white font-extrabold text-[24px]"> HOSSEIN </span>
         </div>
-        <p class="text-white">dvfjhknsflmvhjdfbnskjflkmnveihwjsln jknfa</p>
+        <p class="text-white"> Follow me on social media and github :</p>
         <div class="flex gap-8 items-center">
           <a href="https://linkedin.com/in/hossein-fouladi-215392221">
             <Linkedin />
@@ -46,6 +45,8 @@
     </div>
     <div class="flex justify-between py-4">
         <p class="text-white">Copyright© 2024 Hossein Fouladi. All Rights Reserved.</p>
+        <span class="text-orange text-[22px]">Created by Vue.js </span>
+
         <p class="text-white">User Terms & Conditions | Privacy Policy</p>
     </div>
   </section>

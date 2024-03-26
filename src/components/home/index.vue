@@ -36,19 +36,20 @@
           <div
             class="flex backdrop-blur-sm z-30 px-4 py-2 rounded-full  w-fit mx-auto gap-3 justify-center  mb-8 border-x border-y border-[#D0D5DD]"
           >
-            <Button class="animate__animated animate__headShake " v-if="!isHover"
+            <Button @click="scroll('#resume')" class="animate__animated animate__headShake " v-if="!isHover"
               ><span class="blur-none text-[24px] font-medium">Portfolio</span><Arrow />
             </Button>
-            <v-btn v-else variant="text" class="text-[26px] portfolio font-medium text-white"
+            <v-btn  v-else variant="text" class="text-[26px] portfolio font-medium text-white"
               >Portfolio</v-btn
             >
-            <Button @mouseleave="isHover = false" class="animate__animated animate__headShake " v-if="isHover"
+            <Button @click="scroll('#about')" @mouseleave="isHover = false" class="animate__animated animate__headShake " v-if="isHover"
               ><span class="text-[24px] font-medium">Hire Me</span><Arrow />
             </Button>
             <v-btn
               v-else
               @mouseover="isHover = true"
               variant="text"
+              
               class="text-[26px] portfolio font-medium text-white"
               >Hire Me</v-btn
             >
@@ -82,6 +83,9 @@ const isHover = ref(false)
 const isVisible = ref(false)
 const tl = gsap.timeline();
 
+const scroll=(element:string)=>{
+  document.querySelector(element)?.scrollIntoView({behavior:'smooth'})
+}
 const setAnimation = () => {
   isVisible.value = true
   tl.to('.experience', { y: -230, duration: 0.5 })

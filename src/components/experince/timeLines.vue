@@ -43,7 +43,7 @@
       <template v-slot:opposite>
         <div class="flex flex-col gap-2 max-w-[450px]">
           <h2 class="text-[32px] font-extrabold">G2 holding, Tabriz</h2>
-          <p class="text-gray-thin text-[18px]">April 2021- Present</p>
+          <p class="text-gray-thin text-[18px]">May 2022- Present</p>
         </div>
       </template>
       <div class="flex flex-col gap-3 max-w-[450px]">

@@ -6,16 +6,17 @@
               alt="project"
               class="absolute top-0 left-0  w-full h-full  object-fit"
             />
+            <div class="absolute top-0 left-0 w-full h-full back"></div>
             <div class="flex justify-end w-full px-4 py-4">
               <div
                 class="transition-all z-20 duration-250 w-16 h-16 rounded-full border-x border-y border-orange flex justify-center items-center"
                 :class="isHover?'bg-orange':'bg-transparent'" 
               >
-                <Arrow :color="isHover?'white':'#FD853A'" class="rotate-45 " />
+                <Arrow :color="isHover?'white':'#FD853A'" class="rotate-45 z-30" />
               </div>
             </div>
-            <div  class="flex flex-col text-box gap-4 translate-y-36 px-4 py-4 w-[90%] " :class="[{'rounded-md backdrop-blur  bg-[#000000] opacity-[0.7] mx-auto':isHover},`text-box-${id}`] ">
-              <h1 class="text-start font-extrabold text-[38px] text-white">{{ title }}</h1>
+            <div  class="flex flex-col text-box gap-4 translate-y-32 px-4 py-4 w-[90%] " :class="[{'rounded-md backdrop-blur  bg-[#000000] opacity-[0.7] mx-auto':isHover},`text-box-${id}`] ">
+              <h1  class="text-start font-extrabold text-[38px] text-white">{{ title }}</h1>
               <p class="text-start text-white">{{ description }}</p>
             </div>
             x
@@ -60,5 +61,10 @@ const props = defineProps({
 <style scoped>
 .fd{
     color: rgba(101, 99, 99, 0.322);
+}
+.back{
+  background: linear-gradient(0deg, rgba(26,25,25,1) 0%, rgba(255,255,255,0) 35%);
+
+  
 }
 </style>
