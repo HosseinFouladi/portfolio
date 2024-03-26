@@ -24,7 +24,6 @@
 </template>
 
 <script setup lang="ts">
-import Button from '../utilities/button.vue'
 import Cart from './cart.vue'
 import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Pagination } from 'vue3-carousel'

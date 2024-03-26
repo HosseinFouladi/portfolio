@@ -3,12 +3,12 @@
     <div class="mt-12 flex flex-col items-center  gap-3 position">
       <div class="flex">
         <Button color="#444444" background="transparent">Hello!</Button>
-        <triple class="-mt-4" />
+        <Triple class="-mt-4" />
       </div>
       <h1 class="text-[64px] font-medium text-center tracking-wider">
         I`m <span class="text-orange">Hossein</span>,<br />Frontend Developer
       </h1>
-      <triple class="rotate-180 -ml-[640px] -mt-8" :width="50" :height="50" />
+      <Triple class="rotate-180 -ml-[640px] -mt-8" :width="50" :height="50" />
     </div>
     <div class="flex justify-around items-center">
       <div class="flex experience flex-col gap-6 w-[330px]">
@@ -71,7 +71,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import Button from '../utilities/button.vue'
-import triple from '../icons/triple.vue'
+import Triple from '../icons/triple.vue'
 import Qoutes from '../icons/qoutes.vue'
 import Arrow from '../icons/arrow.vue'
 import Star from '../icons/star.vue';

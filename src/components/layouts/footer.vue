@@ -54,8 +54,6 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import Arrow from '../icons/arrow.vue'
-import Button from '../utilities/button.vue'
 import Linkedin from '../icons/linkedin.vue'
 import Whatsapp from '../icons/whatsapp.vue'
 import Github from '../icons/github.vue'

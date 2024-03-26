@@ -10,7 +10,7 @@
   </svg>
 </template>
 
-<script setup>
+<script lang="ts" setup>
   defineProps({
     width:{type:Number,default:33},
     height:{type:Number,default:33}
@@ -18,4 +18,3 @@
   })
 </script>
 
-<style lang="scss" scoped></style>
