@@ -24,12 +24,12 @@
           class="bg-[#FEB273] w-[600px]  h-[300px] rounded-t-full flex flex-col justify-end relative"
         >
           <img
-            src="/static/images/woman.png"
+            src="/public/static/images/woman.png"
             alt="me"
             class="absolute w-[600px] z-20 left-1/2 -translate-x-1/2"
           />
           <img
-            src="/static/images/deco.png"
+            src="/public/static/images/deco.png"
             v-if="isVisible"
             class="absolute deco animate__animated animate__fadeInUp animate__faster   z-10  -bottom-[500px] h-[1000px]"
           />

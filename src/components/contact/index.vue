@@ -15,28 +15,7 @@
       </div>
     </div>
   </section>
-  <!-- <div
-    class="bg-[#FB6514] h-[147px] rounded-tl-lg w-[200%] rounded-br-lg flex flex-col justify-center"
-  >
-    <div class="bg-white h-16 justify-between infinite flex items-center p-2 w-full">
-      <Shape />
-      <span class="text-[32px] font-bold">React.js</span>
-      <Shape />
-      <span class="text-[32px] font-bold">Nuxt.js</span>
-      <Shape />
-      <span class="text-[32px] font-bold">Frontend</span>
-      <Shape />
-      <span class="text-[32px] font-bold">Javascript</span>
-      <Shape />
-      <span class="text-[32px] font-bold">Next.js</span>
-      <Shape />
-      <span class="text-[32px] font-bold">Nuxt.js</span>
-      <Shape />
-      <span class="text-[32px] font-bold">Vue.js</span>
-      <Shape />
-      <span class="text-[32px] font-bold">React.js</span>
-    </div>
-  </div> -->
+  
 </template>
 
 <script setup lang="ts">

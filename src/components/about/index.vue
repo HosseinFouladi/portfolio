@@ -14,7 +14,7 @@
         />
       </div>
       <img
-        src="/static/images/woman.png"
+        src="/public/static/images/woman.png"
         class="w-[400px] h-[400px] relative object-cover transition-all duration-500"
         :class="isHover ? ' translate-y-3' : ''"
         alt="me"
