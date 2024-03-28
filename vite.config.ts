@@ -18,6 +18,6 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./portfolio/src', import.meta.url))
     }
   },
-  base:env.VITE_ENV==='production'?'/portfolio/':'/'
+  base:env.VITE_ENV==='production'?'/portfolio/':'/',
   
 })
