@@ -52,7 +52,7 @@ const projects = [
   {
     link: 'https://g2-holding.com/',
     title: 'g2holding',
-    background: '/static/images/holding.png',
+    background: 'static/images/holding.png',
     description:
       'I have Built g2holding project that present G2 staff and introduce all holding related websites. Slides changes when user scrolls',
     id: 1
@@ -60,7 +60,7 @@ const projects = [
   {
     link: 'https://trick-front-fa.go2tr.work/',
     title: 'trick',
-    background: '/static/images/trick.png',
+    background: 'static/images/trick.png',
     description:
       'I have designed go2trick website that accept different project in various context using Nuxt3 and tailwind',
     id: 2
@@ -68,7 +68,7 @@ const projects = [
   {
     link: 'https://g2internship.com/',
     title: 'internship',
-    background: '/static/images/internship.png',
+    background: 'static/images/internship.png',
     description: ' I have created an educational website that provide various courses for users. it has register users and signup course services.',
     id: 3
   }

@@ -53,35 +53,35 @@ let tlBig: gsap.core.Timeline = gsap.timeline()
 const skills = [
   {
     title: 'React.js',
-    src: '/static/images/react.png'
+    src: 'static/images/react.png'
   },
   {
     title: 'Vue.js',
-    src: '/static/images/vue.webp'
+    src: 'static/images/vue.webp'
   },
   {
     title: 'Next.js',
-    src: '/static/images/next.png'
+    src: 'static/images/next.png'
   },
   {
     title: 'Nuxt.js',
-    src: '/static/images/nuxt.svg.png'
+    src: 'static/images/nuxt.svg.png'
   },
   {
     title: 'TypeScript',
-    src: '/static/images/typescript.jpg'
+    src: 'static/images/typescript.jpg'
   },
   {
     title: 'Git',
-    src: '/static/images/git.png'
+    src: 'static/images/git.png'
   },
   {
     title: 'Docker',
-    src: '/static/images/docker-logo.png'
+    src: 'static/images/docker-logo.png'
   },
   {
     title: 'Tailwind',
-    src: '/static/images/tailwind.png'
+    src: 'static/images/tailwind.png'
   }
 ]
 const setAnimations = () => {
