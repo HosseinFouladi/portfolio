@@ -52,7 +52,7 @@ const props = defineProps({
     default:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus nunc, posuere in justo vulputate, bibendum sodales'
   },
-  background: { type: String, default: '/public/static/images/holding.png' },
+  background: { type: String, default: '/static/images/holding.png' },
   link: { type: String, default: 'https://g2-holding.com/' },
   id:{type:Number,default:1}
 })

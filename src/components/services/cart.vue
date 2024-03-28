@@ -30,7 +30,7 @@ import 'animate.css';
 import {ref} from 'vue';
     defineProps({
         title:{type:String,default:'Web Design'},
-        src:{type:String,default:'/public/static/images/cart.jpeg'}
+        src:{type:String,default:'/static/images/cart.jpeg'}
     })
     const isHover=ref(false);
 </script>

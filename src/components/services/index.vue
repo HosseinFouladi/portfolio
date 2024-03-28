@@ -6,17 +6,17 @@
     class="bg-[url('/static/images/service-bg.jpeg')] bg-cover w-full rounded-[50px] py-[116px] px-[71px] relative overflow-hidden flex flex-col gap-24"
   >
     <img
-      src="/public/static/images/star-medium.png"
+      src="/static/images/star-medium.png"
       alt="star-med"
       class="absolute -left-24 top-[100px] star-medium"
     />
     <img
-      src="/public/static/images/star-small.png"
+      src="/static/images/star-small.png"
       alt="star-small"
       class="absolute left-1/3 top-[100px] star-small"
     />
     <img
-      src="/public/static/images/star-big.png"
+      src="/static/images/star-big.png"
       alt="star-big"
       class="absolute star-big -right-4 -bottom-16"
     />
@@ -53,35 +53,35 @@ let tlBig: gsap.core.Timeline = gsap.timeline()
 const skills = [
   {
     title: 'React.js',
-    src: '/public/static/images/react.png'
+    src: '/static/images/react.png'
   },
   {
     title: 'Vue.js',
-    src: '/public/static/images/vue.webp'
+    src: '/static/images/vue.webp'
   },
   {
     title: 'Next.js',
-    src: '/public/static/images/next.png'
+    src: '/static/images/next.png'
   },
   {
     title: 'Nuxt.js',
-    src: '/public/static/images/nuxt.svg.png'
+    src: '/static/images/nuxt.svg.png'
   },
   {
     title: 'TypeScript',
-    src: '/public/static/images/typescript.jpg'
+    src: '/static/images/typescript.jpg'
   },
   {
     title: 'Git',
-    src: '/public/static/images/git.png'
+    src: '/static/images/git.png'
   },
   {
     title: 'Docker',
-    src: '/public/static/images/docker-logo.png'
+    src: '/static/images/docker-logo.png'
   },
   {
     title: 'Tailwind',
-    src: '/public/static/images/tailwind.png'
+    src: '/static/images/tailwind.png'
   }
 ]
 const setAnimations = () => {
