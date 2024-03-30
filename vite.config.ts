@@ -3,7 +3,7 @@ import { fileURLToPath, URL } from 'node:url'
 import { defineConfig ,loadEnv} from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
-
+import path from 'node:path'
 const env=loadEnv('production','')
 
 
@@ -18,6 +18,5 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
-  base:env.VITE_ENV==='production'?'/portfolio/':'/',
-  
+  // base: path.resolve(__dirname, "./dist/"),  
 })
