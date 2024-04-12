@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-const bipEvenet=ref(null);
+// const bipEvenet=ref(null);
 const links = ref([
   { id: 'home', title: 'Home' },
   { id: 'about', title: 'About' },
@@ -15,25 +15,25 @@ const scroll=(id:string)=>{
   element?.scrollIntoView({behavior:'smooth'})
 }
 
-window.addEventListener("beforeinstallprompt",event=>{
-  bipEvenet.value=event;
-  if(bipEvenet.value){
-    document.querySelector("#install-btn")?.classList.remove("hidden");
-  }
-})
-const install=()=>{
-  if(bipEvenet.value){
-    bipEvenet.value?.prompt();
-  }else{
-    document.querySelector("#install-btn")?.classList.add("hidden");
-  }
-}
+// window.addEventListener("beforeinstallprompt",event=>{
+//   bipEvenet.value=event;
+//   if(bipEvenet.value){
+//     document.querySelector("#install-btn")?.classList.remove("hidden");
+//   }
+// })
+// const install=()=>{
+//   if(bipEvenet.value){
+//     bipEvenet.value?.prompt();
+//   }else{
+//     document.querySelector("#install-btn")?.classList.add("hidden");
+//   }
+// }
 </script>
 
 <template>
   <ul class="flex w-4/5  rounded-full justify-between items-center bg-dark mt-10 mx-auto p-2 gap-4">
 
-    <button id="install-btn " class="text-white hidden" @click="install">install</button>
+    <button id="install-btn " class="text-white hidden" >install</button>
     <RouterLink
       v-for="item in links"
       :to="item.id"
