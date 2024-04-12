@@ -2,7 +2,9 @@
   <section id="home" class="px-16"  >
     <div class="mt-12 flex flex-col items-center  gap-3 position">
       <div class="flex">
-        <Button color="#444444" background="transparent">Hello!</Button>
+        <Button v-if="isShare" color="#444444" background="transparent"  @click="shareApp" id="share-btn">Share</Button>
+        <Button v-else color="#444444" background="transparent" >hello</Button>
+
         <Triple class="-mt-4" />
       </div>
       <h1 class="text-[64px] font-medium text-center tracking-wider">
@@ -24,9 +26,9 @@
           class="bg-[#FEB273] w-[600px]  h-[300px] rounded-t-full flex flex-col justify-end relative"
         >
           <img
-            src="/public/static/images/woman.png"
+            src="/public/static/images/hosseinFouladi.png"
             alt="me"
-            class="absolute w-[600px] z-20 left-1/2 -translate-x-1/2"
+            class="absolute w-[200px] z-20 left-1/2 -translate-x-1/2"
           />
           <img
             src="/public/static/images/deco.png"
@@ -82,7 +84,19 @@ import { gsap } from 'gsap'
 const isHover = ref(false)
 const isVisible = ref(false)
 const tl = gsap.timeline();
+const isShare=ref(false)
 
+const shareApp=()=>{
+   if(navigator){
+    isShare.value=true;
+    navigator.share({
+      title:"Personal Portfolio App",
+      text:"Share this app"
+    })
+   }
+   else 
+   isShare.value=false;
+}
 const scroll=(element:string)=>{
   document.querySelector(element)?.scrollIntoView({behavior:'smooth'})
 }
@@ -111,4 +125,5 @@ const resetAnimation =() => {
     font-weight: 500;
   }
 }
+
 </style>
