@@ -5,8 +5,8 @@
       @mouseenter="isHover = true"
       @mouseleave="isHover = false"
     >
-      <div
-        class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[300px] h-[350px] rounded-[42px] bg-light-orange"
+      <!-- <div
+        class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[250px] h-[400px] rounded-[42px] bg-light-orange"
       >
         <Circles
           v-if="isHover"
@@ -14,11 +14,11 @@
         />
       </div>
       <img
-        src="/public/static/images/woman.png"
-        class="w-[400px] h-[400px] relative object-cover transition-all duration-500"
+        src="/public/static/images/hosseinFouladi.png"
+        class="w-[200px] h-[400px] relative object-cover transition-all duration-500"
         :class="isHover ? ' translate-y-3' : ''"
         alt="me"
-      />
+      /> -->
     </div>
     <div class="flex flex-col gap-12">
       <h1 class="text-[48px] font-bold">Why <span class="text-orange">Hire me</span>?</h1>

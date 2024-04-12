@@ -1,0 +1,16 @@
+{
+  "name": "personal-portfolio-vue",
+  "short_name": "portfolio",
+  "description": "My Awesome portfolio app",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "public/user-tie.svg",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+  ,
+  "start_url":"./",
+  "display":"standalone"
+}
