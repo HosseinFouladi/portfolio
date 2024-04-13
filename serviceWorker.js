@@ -18,7 +18,7 @@ self.addEventListener('fetch', (event) => {
           return networkResponse
         })
       })
-      return founded || fetchPromise
+      return founded || fetchPromise 
     })
   )
 })
